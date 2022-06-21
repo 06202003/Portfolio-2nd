@@ -160,12 +160,19 @@ body {
     text-shadow: 0px 0px 2px #000;
     margin-left: 0;
   }
+
   .container-home {
     height: auto;
     display: flex;
     align-items: center;
     margin-top: 4rem;
     padding-bottom: 1rem;
+  }
+  .container-aboutme {
+    height: 100vh;
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
   }
   .sticky-right {
     display: none;
