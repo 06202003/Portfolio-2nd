@@ -92,7 +92,7 @@ body {
 
 /* About Me */
 .container-aboutme {
-  height: 100vh;
+  height: 80vh;
   background-color: whitesmoke;
   display: flex;
   align-items: center;
@@ -135,7 +135,6 @@ body {
   max-height: 400px;
   margin-left: 1.5rem;
 }
-}
 .cert-gif {
   width: 100%;
   max-width: 400px;
@@ -153,7 +152,7 @@ body {
 /* discord */
 
 /* Media query Smartphone */
-@media only screen and (min-device-width: 319px) and (max-device-width: 667px)  {
+@media only screen and (min-width: 319px) and (max-width: 667px) {
   .navbar-brand {
     font-size: 2em;
     color: #16a83a;
@@ -178,13 +177,28 @@ body {
     height: auto;
     max-height: 400px;
   }
+  .about-image {
+    border-radius: 30px;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    max-height: 400px;
+    margin-left: 0rem;
+  }
   .about-title {
-    padding-top: 0rem;
+    padding-top: 5rem;
   }
   .about-image {
     padding-left: 0;
   }
   .about-desc {
     font-size: 1em;
+  }
+  .semafit {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    max-height: 400px;
+    margin-left: 0rem;
   }
 }
