@@ -153,7 +153,7 @@ body {
 /* discord */
 
 /* Media query Smartphone */
-@media only screen and (min-device-width: 374px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (min-device-width: 319px) and (max-device-width: 667px)  {
   .navbar-brand {
     font-size: 2em;
     color: #16a83a;
