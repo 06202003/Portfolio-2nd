@@ -15,7 +15,7 @@ body {
   background: transparent;
 }
 .navbar-brand {
-  font-size: 3em;
+  font-size: 2.5em;
   color: #16a83a;
   font-weight: bold;
   text-shadow: 0px 0px 2px #000;
@@ -111,7 +111,7 @@ body {
   max-width: 400px;
   height: auto;
   max-height: 400px;
-  padding-left: 4rem;
+  margin-left: 1.5rem;
 }
 /* About Me */
 
@@ -133,6 +133,8 @@ body {
   max-width: 400px;
   height: auto;
   max-height: 400px;
+  margin-left: 1.5rem;
+}
 }
 .cert-gif {
   width: 100%;
