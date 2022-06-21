@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+/* Body */
+body {
+  background-color: white;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+/* Body */
+
+/* Navbar */
+.navbar {
+  background: transparent;
+}
+.navbar-brand {
+  font-size: 3em;
+  color: #16a83a;
+  font-weight: bold;
+  text-shadow: 0px 0px 2px #000;
+  margin-left: 4rem;
+}
+.navbar-brand-name {
+  font-size: 1em;
+  color: #16a83a;
+  text-decoration: none;
+}
+
+.navbar-brand:hover {
+  color: black;
+  text-shadow: 0px 0px 2px #000;
+}
+.navbar-brand-name:hover {
+  color: black;
+}
+.navbar-toggler-icon:hover {
+  color: #fff !important;
+}
+.offcanvas {
+  background-color: #f5f3f1;
+}
+.offcanvas-title {
+  font-size: 1.5em;
+}
+.offcanvas-body {
+  font-size: 1.25em;
+}
+.sticky-right {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  margin-right: 1rem;
+  height: 100%;
+  width: 50px;
+}
+.tengah {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+/* Navbar */
+
+/* Home */
+.container-home {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url('../src/bg.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.fullname {
+  font-size: 4em;
+}
+.nickname {
+  color: #adc888;
+  font-weight: bolder;
+  text-shadow: 0px 0px 2px #000;
+}
+.pas-foto {
+  filter: brightness(0);
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  max-height: 400px;
+}
+/* Home */
+
+/* About Me */
+.container-aboutme {
+  height: 100vh;
+  background-color: whitesmoke;
+  display: flex;
+  align-items: center;
+}
+.about-title {
+  font-size: 4em;
+  color: #16a83a;
+  margin-bottom: 1rem;
+}
+.about-desc {
+  font-size: 1.5em;
+}
+.about-image {
+  border-radius: 30px;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  max-height: 400px;
+  padding-left: 4rem;
+}
+/* About Me */
+
+/* Experiences */
+.container-experiences {
+  height: auto;
+  background-color: white;
+  display: flex;
+  align-items: center;
+}
+.exp-title {
+  font-size: 4em;
+  color: #16a83a;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+.semafit {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  max-height: 400px;
+}
+.cert-gif {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  max-height: 400px;
+}
+/* Experiences */
+
+/* discord */
+.discrot {
+  width: 100%;
+  max-width: 300px;
+  height: 500px;
+}
+/* discord */
+
+/* Media query Smartphone */
+@media only screen and (min-device-width: 374px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+  .navbar-brand {
+    font-size: 2em;
+    color: #16a83a;
+    font-weight: bold;
+    text-shadow: 0px 0px 2px #000;
+    margin-left: 0;
+  }
+  .container-home {
+    height: auto;
+    display: flex;
+    align-items: center;
+    margin-top: 4rem;
+    padding-bottom: 1rem;
+  }
+  .sticky-right {
+    display: none;
+  }
+  .pas-foto {
+    filter: brightness(0);
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    max-height: 400px;
+  }
+  .about-title {
+    padding-top: 0rem;
+  }
+  .about-image {
+    padding-left: 0;
+  }
+  .about-desc {
+    font-size: 1em;
+  }
+}
