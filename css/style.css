@@ -126,7 +126,7 @@ body {
   font-size: 4em;
   color: #16a83a;
   text-align: center;
-  margin-bottom: 5rem;
+  margin-bottom: 4rem;
 }
 .semafit {
   width: 100%;
@@ -142,6 +142,68 @@ body {
   max-height: 400px;
 }
 /* Experiences */
+
+/* Skills */
+.container-skills {
+  height: auto;
+  background-color: whitesmoke;
+  display: flex;
+  align-items: center;
+  margin-top: -1.5rem;
+}
+.skills-image {
+  max-width: 200px;
+  width: 80%;
+  height: auto;
+  margin-left: 0.5rem;
+}
+.skils-desc {
+  font-size: 2em;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+/* Skills */
+
+/* Projects */
+.container-projects {
+  height: auto;
+  background-color: white;
+  display: flex;
+  align-items: center;
+}
+.projects-title {
+  font-size: 3.5em;
+}
+.projects-name {
+  font-size: 2.5em;
+}
+.projects-asal {
+  font-size: 2em;
+}
+.projects-desc {
+  font-size: 1.5em;
+}
+.project-image {
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.project-gap {
+  margin-bottom: 4rem;
+}
+.row-yt {
+  height: 500px;
+}
+.youtube {
+  margin-top: 4rem;
+  width: 100%;
+  height: 75%;
+}
+/* Projects */
 
 /* discord */
 .discrot {
@@ -160,7 +222,12 @@ body {
     text-shadow: 0px 0px 2px #000;
     margin-left: 0;
   }
-
+  .exp-title {
+    font-size: 3em;
+    color: #16a83a;
+    text-align: center;
+    margin-bottom: 4rem;
+  }
   .container-home {
     height: auto;
     display: flex;
@@ -207,5 +274,42 @@ body {
     height: auto;
     max-height: 400px;
     margin-left: 0rem;
+  }
+  .skills-image {
+    max-width: 175px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .skils-desc {
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: 1rem;
+  }
+  .projects-title {
+    font-size: 2em;
+  }
+  .projects-name {
+    font-size: 1.25em;
+  }
+  .projects-hasil {
+    font-size: 0.75em;
+  }
+  .projects-asal {
+    font-size: 1em;
+  }
+  .projects-desc {
+    font-size: 0.75em;
+  }
+  .project-image {
+    max-width: 175px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
   }
 }

@@ -14,3 +14,10 @@ anime({
   loop: true,
   d: [{ value: [wave1, wave2] }, { value: wave3 }, { value: wave4 }, { value: wave1 }],
 });
+anime({
+  targets: ['#logoanimate'],
+  keyframes: [{ rotate: 540 }, { rotate: 0 }, { rotate: 540 }, { rotate: 0 }],
+  duration: 10000,
+  easing: 'easeOutElastic(1, .8)',
+  loop: true,
+});
