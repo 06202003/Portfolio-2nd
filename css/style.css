@@ -196,12 +196,13 @@ body {
   margin-bottom: 4rem;
 }
 .row-yt {
-  height: 500px;
+  height: 600px;
 }
 .youtube {
   margin-top: 4rem;
+  margin-bottom: 4rem;
   width: 100%;
-  height: 75%;
+  height: 60%;
 }
 /* Projects */
 
