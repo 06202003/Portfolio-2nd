@@ -275,6 +275,10 @@ body {
     text-align: center;
     margin-bottom: 4rem;
   }
+  .exp {
+    margin-bottom: 0px;
+    padding-top: 0;
+  }
   .container-home {
     height: auto;
     display: flex;
