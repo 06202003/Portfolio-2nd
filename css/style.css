@@ -205,6 +205,36 @@ body {
 }
 /* Projects */
 
+/* Contact Me */
+.container-contact {
+  height: auto;
+  background-color: whitesmoke;
+  display: flex;
+  align-items: center;
+  margin-top: -1.5rem;
+  padding-bottom: 6.5rem;
+}
+.contact-hr {
+  margin-bottom: 2rem;
+  height: 0.5rem;
+  width: 15rem;
+  background-color: gray;
+}
+.contact-maps {
+  max-width: 500px;
+  width: 100%;
+  border: 0;
+  height: 500px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.contact-textarea {
+  overflow: auto;
+  resize: none;
+}
+/* Contact Me */
+
 /* discord */
 .discrot {
   width: 100%;
@@ -212,6 +242,22 @@ body {
   height: 500px;
 }
 /* discord */
+
+/* contact-modal-thx */
+.contact-modal-thx {
+  border-radius: 30px;
+  width: auto;
+  max-width: 300px;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.contact-modal-h4 {
+  margin-top: 1rem;
+  text-align: center;
+}
+/* contact-modal-thx */
 
 /* Media query Smartphone */
 @media only screen and (min-width: 319px) and (max-width: 667px) {
@@ -276,7 +322,7 @@ body {
     margin-left: 0rem;
   }
   .skills-image {
-    max-width: 175px;
+    max-width: 100px;
     width: 100%;
     height: auto;
     display: block;
@@ -311,5 +357,15 @@ body {
     margin-left: auto;
     margin-right: auto;
     margin-top: 2rem;
+  }
+  .contact-maps {
+    max-width: 400px;
+    width: 100%;
+    border: 0;
+    height: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
   }
 }
