@@ -9,19 +9,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css" />
-    <!-- Icon -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <!-- Icon -->    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="shortcut icon" href="src/favicon-32x32.png" type="image/x-icon">
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet" />
+    <!-- FontAwesome -->
   </head>
   <body>
     <!-- Navbar -->
@@ -37,23 +32,62 @@
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
           <div class="offcanvas-body">
-            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-              <li class="nav-item">
-                <a class="nav-link" href="#aboutme">About Me</a>
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 d-flex">
+              <li class="nav-item  ">
+                <div class="row d-flex">
+                  <div class="col-md-1  pt-2">
+                    <i class="fa-solid   fa-address-card  "></i>
+                  </div>
+                  <div class="col-md-8 ">
+                    <a class="nav-link" href="#aboutme">About Me</a>
+                  </div>
+                </div>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#experiences">Experiences</a>
+              <li class="nav-item  ">
+                <div class="row d-flex">
+                  <div class="col-md-1  pt-2">
+                    <i class="fa-solid mt-2   fa-file "></i>
+                  </div>
+                  <div class="col-md-8 ">
+                    <a class="nav-link" href="#experiences">Experiences</a>
+                  </div>
+                </div>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#skills">Skills</a>
+              <li class="nav-item  ">
+                <div class="row d-flex">
+                  <div class="col-md-1  pt-2">
+                    <i class="fa-solid   fa-lightbulb "></i>
+                  </div>
+                  <div class="col-md-8 ">
+                    <a class="nav-link" href="#skills">Skills</a>
+                  </div>
+                </div>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#projects">Projects</a>
+              <li class="nav-item  ">
+                <div class="row d-flex">
+                  <div class="col-md-1  pt-2">
+                    <i class="fa-solid   fa-diagram-project "></i>
+                  </div>
+                  <div class="col-md-8 ">
+                    <a class="nav-link" href="#projects">Projects</a>
+                  </div>
+                </div>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contactme">Contact Me!</a>
+              <li class="nav-item  ">
+                <div class="row d-flex">
+                  <div class="col-md-1  pt-2">
+                    <i class="fa-solid  fa-address-book "></i>
+                  </div>
+                  <div class="col-md-8 ">
+                    <a class="nav-link" href="#contactme">Contact Me!</a>
+                  </div>
+                </div>
               </li>
             </ul>
+            <div class="offcanvas-identity">
+              <img class="offcanvas-gif" src="src/coding.gif" alt="coding gif">
+              <p class="align-self-center offcanvas-quotes"> "Cukup bahasa pemrograman saja yang C, nilaiku Jangan"</p>
+            </div>
           </div>
         </div>
       </div>
@@ -174,42 +208,42 @@
       <div class="container" >
         <h1 class="exp-title">Skills</h1>
         <div class="row">
-          <div class="col-lg-2 col-sm-6">
+          <div class="col-md-2 col-sm-6">
             <img  class="skills-image" src="src/html.svg" alt="HTML5">
             <h3 class="skils-desc">HTML</h3>
           </div>
-          <div class="col-lg-2 col-sm-6">
+          <div class="col-md-2 col-sm-6">
             <img class="skills-image" src="src/css.png" alt="CSS">
             <h3 class="skils-desc">CSS</h3>
           </div>
-          <div class="col-lg-2 col-sm-2">
+          <div class="col-md-2 col-sm-2">
             <img class="skills-image" src="src/javascript.svg" alt="javascript">
             <h3 class="skils-desc">Javascript</h3>
           </div>
-          <div class="col-lg-2 col-sm-2">
+          <div class="col-md-2 col-sm-2">
             <img class="skills-image" src="src/bootstrap.svg" alt="bootstrap">
             <h3 class="skils-desc">Bootstrap</h3>
           </div>
-          <div class="col-lg-2 col-sm-2">
+          <div class="col-md-2 col-sm-2">
             <img class="skills-image" src="src/python.svg" alt="python">
             <h3 class="skils-desc">Python</h3>
           </div>
-          <div class="col-lg-2 col-sm-2">
+          <div class="col-md-2 col-sm-2">
             <img class="skills-image" src="src/mysql.png" alt="MySQL">
             <h3 class="skils-desc">MySQL</h3>
           </div>
         </div>
         <h1 class="exp-title mt-5">Upcoming Skills</h1>
         <div class="row d-flex justify-content-center">
-          <div class="col-lg-2 col-sm-2 ">
+          <div class="col-md-2 col-sm-2 ">
             <img  class="skills-image" src="src/react.svg" alt="react">
             <h3 class="skils-desc">React</h3>
           </div>
-          <div class="col-lg-2 col-sm-2">
+          <div class="col-md-2 col-sm-2">
             <img class="skills-image" src="src/tailwind.svg" alt="tailwind">
             <h3 class="skils-desc">Tailwind</h3>
           </div>
-          <div class="col-lg-2 col-sm-2">
+          <div class="col-md-2 col-sm-2">
             <img class="skills-image" src="src/nodejs.svg" alt="nodejs">
             <h3 class="skils-desc">NodeJS</h3>
           </div>
