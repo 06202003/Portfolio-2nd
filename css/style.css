@@ -92,7 +92,7 @@ body {
 
 /* About Me */
 .container-aboutme {
-  height: 80vh;
+  height: 100vh;
   background-color: whitesmoke;
   display: flex;
   align-items: center;
