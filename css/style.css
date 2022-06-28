@@ -14,7 +14,7 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-  background: white; /* color of the tracking area */
+  background: transparent; /* color of the tracking area */
 }
 
 body::-webkit-scrollbar-thumb {
