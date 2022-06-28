@@ -6,7 +6,7 @@
 
 /* Body */
 body {
-  background-color: white;
+  background-color: whitesmoke;
   font-family: 'Noto Sans TC', sans-serif;
 }
 body::-webkit-scrollbar {
@@ -127,6 +127,59 @@ body::-webkit-scrollbar-thumb {
   height: auto;
   max-height: 400px;
 }
+.title span {
+  --total: calc(var(--duration) + var(--delay));
+  position: relative;
+  display: flex;
+  color: transparent;
+  overflow: hidden;
+  animation: revealText 1s var(--total) forwards;
+  padding-bottom: 0.5rem;
+}
+
+.title span::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: scaleX(0);
+  transform-origin: left;
+  background: rgb(197, 194, 194);
+  animation: rollIn var(--duration) var(--delay) forwards, rollOut var(--duration) var(--total) forwards;
+}
+
+.title span:nth-child(2)::after {
+  border-top: 3px solid #896ab9;
+}
+
+@keyframes revealText {
+  to {
+    color: black;
+  }
+}
+
+@keyframes rollIn {
+  from {
+    transform: scaleX(0);
+  }
+
+  to {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes rollOut {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(110%);
+  }
+}
+
 /* Home */
 
 /* About Me */
@@ -200,6 +253,7 @@ body::-webkit-scrollbar-thumb {
   font-size: 2em;
   text-align: center;
   margin-top: 1rem;
+  margin-right: 1rem;
 }
 
 /* Skills */
@@ -247,7 +301,7 @@ body::-webkit-scrollbar-thumb {
 
 /* Contact Me */
 .container-contact {
-  height: auto;
+  height: 100vh;
   background-color: whitesmoke;
   display: flex;
   align-items: center;
@@ -256,6 +310,7 @@ body::-webkit-scrollbar-thumb {
 }
 .contact-hr {
   margin-bottom: 2rem;
+  margin-top: -2rem;
   height: 0.5rem;
   width: 15rem;
   background-color: gray;
@@ -377,7 +432,9 @@ body::-webkit-scrollbar-thumb {
     font-size: 1.5em;
     text-align: center;
     margin-top: 1rem;
+    margin-right: 0rem;
   }
+
   .projects-title {
     font-size: 2em;
   }
