@@ -302,7 +302,7 @@ body::-webkit-scrollbar-thumb {
 
 /* Contact Me */
 .container-contact {
-  height: 100vh;
+  height: auto;
   background-color: whitesmoke;
   display: flex;
   align-items: center;
@@ -472,5 +472,13 @@ body::-webkit-scrollbar-thumb {
   }
   .offcanvas-identity {
     display: none;
+  }
+  .container-contact {
+    height: auto;
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    margin-top: -1.5rem;
+    padding-bottom: 6.5rem;
   }
 }
