@@ -146,8 +146,8 @@ body::-webkit-scrollbar-thumb {
   height: 100%;
   transform: scaleX(0);
   transform-origin: left;
+  filter: blur(100px);
   background: rgb(197, 194, 194);
-  filter: blur(60px);
   animation: rollIn var(--duration) var(--delay) forwards, rollOut var(--duration) var(--total) forwards;
 }
 
