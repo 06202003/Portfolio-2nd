@@ -611,24 +611,15 @@
       })
     </script>
   <script>
-        fetch('../script/quotes.json')
-        .then(function (response) {
-          return response.json();
-        })
-        .then(function (quotes) {
-          appendQuotes(quotes);
-        })
-        .catch(function (err) {
-          console.log('error: ' + err);
-        });
+    let quote = document.querySelector("#quotes")
+    let author = document.querySelector("#author")
+    fetch('https://dummyjson.com/quotes/random')
+    .then(res => res.json())
+    .then(data => {
+      quote.innerHTML = '" '+ data.quote+' "';
+      author.innerHTML = '~ ' +data.author+ ' ~';
+    } )
 
-      function appendQuotes(quotes) {
-        var mainContainer = document.getElementById('quotes');
-        var author = document.getElementById('author')
-        i = Math.floor(Math.random() * 30) + 1;
-        mainContainer.innerHTML ='" '+quotes[i].quote+' "';
-        author.innerHTML ='~ '+ quotes[i].author+' ~';
-      }
   </script>
   </body>
 </html>

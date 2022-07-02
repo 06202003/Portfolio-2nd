@@ -21,3 +21,12 @@ anime({
   easing: 'easeOutElastic(1, .8)',
   loop: true,
 });
+
+let quote = document.querySelector('#quotes');
+let author = document.querySelector('#author');
+fetch('https://dummyjson.com/quotes/random')
+  .then((res) => res.json())
+  .then((data) => {
+    quote.innerHTML = '" ' + data.quote + ' "';
+    author.innerHTML = '~ ' + data.author + ' ~';
+  });
