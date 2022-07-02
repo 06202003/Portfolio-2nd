@@ -487,10 +487,10 @@
     <!-- Footer -->
     <footer class="text-center text-white" style="background-color: rgba(0, 0, 0, 0.2);" >
       <!-- Grid container -->
-      <div class="container pt-4" 
+      <div class="container pt-1" 
       >
         <!-- Section: Social media -->
-        <section class="mb-4" >
+        <section class="mb-1" >
           <!-- Discord -->
           <a
             class="btn btn-link btn-floating btn-lg text-dark m-1"
@@ -537,9 +537,10 @@
       <!-- Grid container -->
     
       <!-- Copyright -->
-      <div class="text-center text-dark pb-2" style="background-color: rgba(0, 0, 0, 0.2); font-size: 1em;">
+      <div class="text-center text-dark pb-2" style="background-color: rgba(0, 0, 0, 0.2); font-size: 16px;line-height: 0.75;">
         <p id="quotes" style="padding-top: 1rem;"></p>
-        <p >© 2022 Copyright : Yehezkiel David Setiawan &#129310;&#127996;</p>
+        <p id="author"></p>
+        <p >© 2022 Copyright : Yehezkiel David Setiawan</p>
       </div>
       <!-- Copyright -->
     </footer>
@@ -623,8 +624,10 @@
 
       function appendQuotes(quotes) {
         var mainContainer = document.getElementById('quotes');
+        var author = document.getElementById('author')
         i = Math.floor(Math.random() * 30) + 1;
-        mainContainer.innerHTML = quotes[i].quote;
+        mainContainer.innerHTML ='" '+quotes[i].quote+' "';
+        author.innerHTML ='~ '+ quotes[i].author+' ~';
       }
   </script>
   </body>
