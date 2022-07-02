@@ -537,7 +537,7 @@
       <!-- Grid container -->
     
       <!-- Copyright -->
-      <div class="text-center text-dark pb-2" style="background-color: rgba(0, 0, 0, 0.2); font-size: 16px;line-height: 0.75;">
+      <div class="text-center text-dark pb-2" style="background-color: rgba(0, 0, 0, 0.2); font-size: 16px;line-height: 1;">
         <p id="quotes" style="padding-top: 1rem;"></p>
         <p id="author"></p>
         <p >© 2022 Copyright : Yehezkiel David Setiawan</p>
@@ -610,16 +610,6 @@
         form1.reset();
       })
     </script>
-  <script>
-    let quote = document.querySelector("#quotes")
-    let author = document.querySelector("#author")
-    fetch('https://dummyjson.com/quotes/random')
-    .then(res => res.json())
-    .then(data => {
-      quote.innerHTML = '" '+ data.quote+' "';
-      author.innerHTML = '~ ' +data.author+ ' ~';
-    } )
 
-  </script>
   </body>
 </html>
