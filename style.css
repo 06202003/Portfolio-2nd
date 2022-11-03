@@ -1,0 +1,488 @@
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+/* Body */
+body {
+  background-color: whitesmoke;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  border-radius: 20px;
+  border: 3px solid black;
+}
+/* Body */
+
+/* Navbar */
+.navbar {
+  background: transparent;
+}
+.navbar-brand {
+  font-size: 2.5em;
+  color: #16a83a;
+  font-weight: bold;
+  text-shadow: 0px 0px 2px #000;
+  margin-left: 4rem;
+  backdrop-filter: blur(3px);
+}
+.navbar-brand-name {
+  font-size: 1em;
+  color: #16a83a;
+  text-decoration: none;
+}
+
+.navbar-brand:hover {
+  color: black;
+  text-shadow: 0px 0px 2px #000;
+}
+.navbar-brand-name:hover {
+  color: black;
+}
+.navbar-toggler-icon:hover {
+  color: #fff !important;
+}
+.offcanvas {
+  background-color: #f5f3f1;
+}
+.offcanvas-title {
+  font-size: 1.5em;
+}
+.offcanvas-body {
+  font-size: 1.25em;
+}
+.sticky-right {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  margin-right: 1rem;
+  height: 100%;
+  width: 50px;
+}
+.tengah {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.navbar-logo {
+  padding-top: 0.9rem;
+  padding-right: 0.5rem;
+}
+.offcanvas-identity {
+  width: auto;
+  height: 150px;
+  position: fixed;
+  bottom: 15%;
+}
+.offcanvas-quotes {
+  font-size: 0.67em;
+}
+.offcanvas-gif {
+  width: auto;
+  max-width: 200px;
+  height: auto;
+  max-height: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 30px;
+  margin-bottom: 1.5rem;
+}
+/* Navbar */
+
+/* Home */
+.container-home {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url('../src/bg.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.fullname {
+  font-size: 4em;
+}
+.nickname {
+  color: #adc888;
+  font-weight: bolder;
+  text-shadow: 0px 0px 2px #000;
+}
+.pas-foto {
+  filter: brightness(0);
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  max-height: 400px;
+}
+.title span {
+  --total: calc(var(--duration) + var(--delay));
+  position: relative;
+  display: flex;
+  color: transparent;
+  overflow: hidden;
+  animation: revealText 1s var(--total) forwards;
+  padding-bottom: 0.5rem;
+}
+
+.title span::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: scaleX(0);
+  transform-origin: left;
+  filter: blur(100px);
+  background: rgb(197, 194, 194);
+  animation: rollIn var(--duration) var(--delay) forwards, rollOut var(--duration) var(--total) forwards;
+}
+
+.title span:nth-child(2)::after {
+  border-top: 3px solid #896ab9;
+}
+
+@keyframes revealText {
+  to {
+    color: black;
+  }
+}
+
+@keyframes rollIn {
+  from {
+    transform: scaleX(0);
+  }
+
+  to {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes rollOut {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(110%);
+  }
+}
+
+/* Home */
+
+/* About Me */
+.container-aboutme {
+  height: 100vh;
+  background-color: whitesmoke;
+  display: flex;
+  align-items: center;
+}
+.about-title {
+  font-size: 4em;
+  color: #16a83a;
+  margin-bottom: 1rem;
+}
+.about-desc {
+  font-size: 1.5em;
+}
+.about-image {
+  border-radius: 30px;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  max-height: 400px;
+  margin-left: 1.5rem;
+}
+/* About Me */
+
+/* Experiences */
+.container-experiences {
+  height: auto;
+  background-color: white;
+  display: flex;
+  align-items: center;
+}
+.exp-title {
+  font-size: 4em;
+  color: #16a83a;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+.semafit {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  max-height: 400px;
+  margin-left: 1.5rem;
+}
+.cert-gif {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  max-height: 400px;
+}
+/* Experiences */
+
+/* Skills */
+.container-skills {
+  height: auto;
+  background-color: whitesmoke;
+  display: flex;
+  align-items: center;
+  margin-top: -1.5rem;
+}
+.skills-image {
+  max-width: 200px;
+  width: 80%;
+  height: auto;
+  margin-left: 0.5rem;
+}
+.skils-desc {
+  font-size: 2em;
+  text-align: center;
+  margin-top: 1rem;
+  margin-right: 1rem;
+}
+
+/* Skills */
+
+/* Projects */
+.container-projects {
+  height: auto;
+  background-color: white;
+  display: flex;
+  align-items: center;
+}
+.projects-title {
+  font-size: 3.5em;
+}
+.projects-name {
+  font-size: 2.5em;
+}
+.projects-asal {
+  font-size: 2em;
+}
+.projects-desc {
+  font-size: 1.5em;
+}
+.project-image {
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.project-gap {
+  margin-bottom: 4rem;
+}
+.row-yt {
+  height: 600px;
+}
+.youtube {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  width: 100%;
+  height: 60%;
+}
+/* Projects */
+
+/* Contact Me */
+.container-contact {
+  height: auto;
+  background-color: whitesmoke;
+  display: flex;
+  align-items: center;
+  margin-top: -1.5rem;
+  padding-bottom: 6.5rem;
+}
+.contact-hr {
+  margin-bottom: 2rem;
+  margin-top: -2rem;
+  height: 0.5rem;
+  width: 15rem;
+  background-color: gray;
+}
+.contact-maps {
+  max-width: 500px;
+  width: 100%;
+  border: 0;
+  height: 500px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.contact-textarea {
+  overflow: auto;
+  resize: none;
+}
+/* Contact Me */
+
+/* discord */
+.discrot {
+  width: 100%;
+  max-width: 300px;
+  height: 500px;
+}
+/* discord */
+
+/* contact-modal-thx */
+.contact-modal-thx {
+  border-radius: 30px;
+  width: auto;
+  max-width: 300px;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.contact-modal-h4 {
+  margin-top: 1rem;
+  text-align: center;
+}
+/* contact-modal-thx */
+
+/* Media query Smartphone */
+@media only screen and (min-width: 319px) and (max-width: 667px) {
+  .aighwsd8yuawgdi {
+    width: 13rem;
+  }
+
+  .navbar-brand {
+    font-size: 2em;
+    color: #16a83a;
+    font-weight: bold;
+    text-shadow: 0px 0px 2px #000;
+    margin-left: 0;
+  }
+  .exp-title {
+    font-size: 3em;
+    color: #16a83a;
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+  .exp {
+    margin-bottom: 0px;
+    padding-top: 0;
+  }
+  .container-home {
+    height: auto;
+    display: flex;
+    align-items: center;
+    margin-top: 4rem;
+    padding-bottom: 1rem;
+  }
+  .container-aboutme {
+    height: 100vh;
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+  }
+  .sticky-right {
+    display: none;
+  }
+  .pas-foto {
+    filter: brightness(0);
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    max-height: 400px;
+  }
+  .about-image {
+    border-radius: 30px;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    max-height: 400px;
+    margin-left: 0rem;
+  }
+  .about-title {
+    padding-top: 5rem;
+  }
+  .about-image {
+    padding-left: 0;
+  }
+  .about-desc {
+    font-size: 1em;
+  }
+  .semafit {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    max-height: 400px;
+    margin-left: 0rem;
+  }
+  .skills-image {
+    max-width: 100px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .skils-desc {
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: 1rem;
+    margin-right: 0rem;
+  }
+
+  .projects-title {
+    font-size: 2em;
+  }
+  .projects-name {
+    font-size: 1.25em;
+  }
+  .projects-hasil {
+    font-size: 0.75em;
+  }
+  .projects-asal {
+    font-size: 1em;
+  }
+  .projects-desc {
+    font-size: 0.75em;
+  }
+  .project-image {
+    max-width: 175px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+  }
+  .contact-maps {
+    max-width: 400px;
+    width: 100%;
+    border: 0;
+    height: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+  }
+  .offcanvas-identity {
+    display: none;
+  }
+  .container-contact {
+    height: auto;
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    margin-top: -1.5rem;
+    padding-bottom: 6.5rem;
+  }
+}
