@@ -30,3 +30,6 @@ fetch('https://dummyjson.com/quotes/random')
     quote.innerHTML = '" ' + data.quote + ' "';
     author.innerHTML = '~ ' + data.author + ' ~';
   });
+
+const a = 'b' + 'a' + +'a' + 'a';
+console.log(a);

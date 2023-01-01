@@ -286,6 +286,14 @@ body::-webkit-scrollbar-thumb {
   margin-left: auto;
   margin-right: auto;
 }
+.project-image111 {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 .project-gap {
   margin-bottom: 4rem;
 }
@@ -357,6 +365,10 @@ body::-webkit-scrollbar-thumb {
 
 /* Media query Smartphone */
 @media only screen and (min-width: 319px) and (max-width: 667px) {
+  .aighwsd8yuawgdi {
+    width: 13rem;
+  }
+
   .navbar-brand {
     font-size: 2em;
     color: #16a83a;
