@@ -472,6 +472,14 @@ body::-webkit-scrollbar-thumb {
     margin-right: auto;
     margin-top: 2rem;
   }
+  .project-image111 {
+    max-width: 175px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .contact-maps {
     max-width: 400px;
     width: 100%;
